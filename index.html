@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox JavaScript</title>
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+            margin: 50px;
+        }
+
+
+        .flex-item {
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="flex-container">
+        
+        <div class="flex-item" id="item1">Item 1</div>
+        <div class="flex-item" id="item2">Item 2</div>
+        <div class="flex-item" id="item3">Item 3</div>
+    </div>
+
+    
+    <script>
+       
+        const container = document.querySelector('.flex-container');
+        const item1 = document.querySelector('#item1');
+        const item2 = document.querySelector('#item2');
+        const item3 = document.querySelector('#item3');
+
+        
+        container.style.backgroundColor = 'lightgray';
+        container.style.border = '5px dashed #ffffed';
+        
+        
+        item1.style.backgroundColor = 'purple';
+        item1.style.border = '5px solid #800080';
+        item1.style.color = 'gold';
+
+        item2.style.backgroundColor = 'green';
+        item2.style.border = '5px solid #006400';
+        item2.style.color = 'yellow';
+
+        item3.style.backgroundColor = 'blue';
+        item3.style.border = '5px solid #003366';
+        item3.style.color = 'orange';
+    </script>
+
+</body>
+</html>
